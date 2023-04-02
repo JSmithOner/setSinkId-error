@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select (selectionChange)="changeSinkId($event)">
+    <mat-option *ngFor="let device of filteredDevices" [value]="device">
+      {{ device.label }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
